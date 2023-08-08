@@ -1,17 +1,18 @@
+import { deleteCharacter, updateCharacter } from "../services/characters";
 import characters from "./services/characters";
 
-function characterModal() {
+function CharacterModal() {
   return (
     <div>
       <div className="overlay"></div>
       <div className="modal">
         <div className="modal__header">
-          <h2>{character.name}</h2>
+          <h2>{characters.name}</h2>
           <button className="modal__close-button"> X </button>
 
           <div className="modal__content">
-            <h2>{character.name}</h2>
-            <img src={characters.image} alt={character.name} />
+            <h2>{characters.name}</h2>
+            <img src={characters.image} alt={characters.name} />
 
             <div className="modal__text">
               <p>Status: {characters.status}</p>
@@ -20,8 +21,8 @@ function characterModal() {
               <p>Origin: {characters.origin}</p>
               <p>Location: {characters.location}</p>
 
-              <button className="edit">Edit</button>
-              <button className="delete">Delete</button>
+              <button className="edit">{updateCharacter}</button>
+              <button className="delete">{deleteCharacter}</button>
             </div>
 
           </div>
@@ -31,4 +32,4 @@ function characterModal() {
   );
 }
 
-export default Modal;
+export default CharacterModal;

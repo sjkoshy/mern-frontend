@@ -1,4 +1,4 @@
-import AddButton from '../components/AddCharacter';
+import AddCharacter from '../components/AddCharacter';
 import CharacterModal from '../components/CharacterModal';
 
 function Home() {
