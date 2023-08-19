@@ -1,6 +1,6 @@
 import { createCharacter } from "../services/characters";
 
-function addCharacter() {
+function AddCharacter() {
   return (
     <div>
       <label>
@@ -16,6 +16,6 @@ function addCharacter() {
   )
 }
 
-export default addCharacter;
+export default AddCharacter;
 
 { createCharacter }
