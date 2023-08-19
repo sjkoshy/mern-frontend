@@ -1,7 +1,7 @@
 export default function EditChar() {
   return (
-    <div>
-      
+    <div className="">
+
     </div>
   );
 }
