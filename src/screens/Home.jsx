@@ -1,14 +1,12 @@
-import AddCharacter from '../components/AddCharacter';
-import CharacterModal from '../components/CharacterModal';
+import AddCharacter from '../components/AddChar';
+import CharacterModal from '../components/CharInfo';
 
-function Home() {
+export default function Home() {
   return (
     <div>
       <h1>Rick and Morty Wiki</h1>
       <button onClick={openModal}>{AddCharacter}</button>
-      <CharacterModal />
     </div>
   );
 }
 
-export default Home;

@@ -1,7 +1,7 @@
 import { deleteCharacter, updateCharacter } from "../services/characters";
 import characters from "./services/characters";
 
-function CharacterModal() {
+export default function CharInfo() {
   return (
     <div>
       <div className="overlay"></div>
@@ -31,5 +31,3 @@ function CharacterModal() {
     </div>
   );
 }
-
-export default CharacterModal;
