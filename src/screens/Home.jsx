@@ -21,7 +21,7 @@ export default function Home() {
     <>
     <div className="header">
       <h1>Rick and Morty Wiki</h1>
-      <button onClick={setModal}><AddChar />Add Character</button>
+      <button onClick={openModal}><AddChar />Add Character</button>
     </div>
     <div className="char-grid">
         {characters.map((character) => (<CharPreview key={character.id} character={character} />))}
