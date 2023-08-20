@@ -1,6 +1,18 @@
+import {useState, useEffect} from "react";
 import { createCharacter } from "../services/characters";
 
 export default function AddChar() {
+  const [character, setCharacter] = useState({
+    name: "",
+    status: "",
+    species: "",
+    gender: "",
+    origin: "",
+    location: "",
+    image: "",
+  })
+
+
   return (
     <div>
       <label>
@@ -15,6 +27,3 @@ export default function AddChar() {
     </div>
   )
 }
-
-
-{ createCharacter }
